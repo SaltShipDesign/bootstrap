@@ -81,6 +81,11 @@
     background-color: @dropdown-link-hover-bg;
   }
 }
+.dropdown-menu > li:hover > a {
+  text-decoration: none;
+  color: @dropdown-link-hover-color;
+  background-color: @dropdown-link-hover-bg;
+}
 
 // Active state
 .dropdown-menu > .active > a {
@@ -155,6 +160,7 @@
   font-size: @font-size-small;
   line-height: @line-height-base;
   color: @dropdown-header-color;
+  background-color: @dropdown-header-bg;
   white-space: nowrap; // as with > li > a
 }
 

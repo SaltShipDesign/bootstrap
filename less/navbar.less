@@ -411,6 +411,13 @@
   }
 
   .navbar-nav {
+    > li {
+      &:hover > a {
+        color: @navbar-default-link-hover-color;
+        background-color: @navbar-default-link-hover-bg;
+      }
+    }
+
     > li > a {
       color: @navbar-default-link-color;
 
@@ -545,6 +552,13 @@
   }
 
   .navbar-nav {
+    > li {
+      &:hover > a {
+        color: @navbar-inverse-link-hover-color;
+        background-color: @navbar-inverse-link-hover-bg;
+      }
+    }
+
     > li > a {
       color: @navbar-inverse-link-color;
 
