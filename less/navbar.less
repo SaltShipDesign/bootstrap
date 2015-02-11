@@ -411,6 +411,13 @@
   }
 
   .navbar-nav {
+    > li {
+      &:hover > a {
+        color: @navbar-default-link-hover-color;
+        background-color: @navbar-default-link-hover-bg;
+      }
+    }
+
     > li > a {
       color: @navbar-default-link-color;
 
@@ -529,7 +536,9 @@
 
 .navbar-inverse {
   background-color: @navbar-inverse-bg;
-  border-color: @navbar-inverse-border;
+  border: 0px;
+
+  #gradient > .vertical(@navbar-inverse-bg; #fff);
 
   .navbar-brand {
     color: @navbar-inverse-brand-color;
@@ -545,6 +554,13 @@
   }
 
   .navbar-nav {
+    > li {
+      &:hover > a {
+        color: @navbar-inverse-link-hover-color;
+        background-color: @navbar-inverse-link-hover-bg;
+      }
+    }
+
     > li > a {
       color: @navbar-inverse-link-color;
 
